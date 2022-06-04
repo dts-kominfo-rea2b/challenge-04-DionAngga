@@ -8,7 +8,15 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = (arrayDate, index) => {
+  const arraySecond = [];
+  for (let i = 0; i < arrayDate.length; i++) {
+    arraySecond.push((new Date(arrayDate[i]) / 1000).toString());
+  }
+  if (index === undefined ? (result = arraySecond.sort((a, b) => a - b) && arraySecond.join("-")) : (result = arraySecond[index]));
+  return result
+};
+
 
 // ! JANGAN DIMODIFIKASI
 (() => {
